@@ -7,64 +7,61 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.erikat.practica_json.Controllers.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.erikat.practica_json.Controllers.MainController">
    <Label layoutX="270.0" layoutY="25.0" text="IMDB" textFill="#e41010">
       <font>
-         <Font size="25.0"/>
+         <Font size="25.0" />
       </font>
    </Label>
    <Label layoutX="81.0" layoutY="82.0" text="Título">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </Label>
    <TextField fx:id="titleTField" editable="false" layoutX="129.0" layoutY="77.0">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </TextField>
    <Label layoutX="81.0" layoutY="132.0" text="Fecha">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </Label>
    <TextField fx:id="dateTField" editable="false" layoutX="129.0" layoutY="127.0" prefHeight="31.0" prefWidth="130.0">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </TextField>
    <Label layoutX="70.0" layoutY="183.0" text="Género">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </Label>
    <TextField fx:id="genreTField" editable="false" layoutX="129.0" layoutY="178.0" prefHeight="31.0" prefWidth="165.0">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </TextField>
    <Label layoutX="68.0" layoutY="235.0" text="Director">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </Label>
    <TextField fx:id="dirTField" editable="false" layoutX="129.0" layoutY="230.0">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </TextField>
-   <Button layoutX="234.0" layoutY="310.0" mnemonicParsing="false" onAction="#onImportClick" prefHeight="43.0"
-           prefWidth="134.0" text="Importar">
+   <Button layoutX="234.0" layoutY="310.0" mnemonicParsing="false" onAction="#onImportClick" prefHeight="43.0" prefWidth="134.0" text="Importar">
       <font>
-         <Font name="System Bold" size="16.0"/>
+         <Font name="System Bold" size="16.0" />
       </font>
    </Button>
-   <ListView fx:id="filmListView" layoutX="381.0" layoutY="69.0" prefHeight="294.0" prefWidth="205.0"/>
+   <ListView fx:id="filmListView" layoutX="381.0" layoutY="69.0" onMouseClicked="#onListClick" prefHeight="294.0" prefWidth="205.0" />
    <Label layoutX="419.0" layoutY="43.0" text="Listado de películas">
       <font>
-         <Font size="15.0"/>
+         <Font size="15.0" />
       </font>
    </Label>
 </AnchorPane>
