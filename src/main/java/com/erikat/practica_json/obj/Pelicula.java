@@ -53,5 +53,5 @@ public class Pelicula {
     @Override
     public String toString() {
         return this.id + ": " + this.titulo + " - " + this.director + " (" + this.fecha + ")";
-    } //La función toString en este caso
+    } //La función toString en este caso sirve para mostrar correctamente el contenido de la lista
 }
